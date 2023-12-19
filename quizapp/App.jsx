@@ -1,9 +1,13 @@
 import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
 import MyStack from './src/navigation'
 import { NavigationContainer } from '@react-navigation/native'
-
+import {requestUserPermission, notificationListner} from './src/utils/notificationServices'
 const App = () => {
+  useEffect(()=>{
+    requestUserPermission()
+    notificationListner()
+  })
   return (
       <NavigationContainer>
         <MyStack />
