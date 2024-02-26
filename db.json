@@ -1,0 +1,12 @@
+{
+  "favorite": [
+    {
+      "id": "8",
+      "name": "Pepperoni Pizza",
+      "ingredients": "Pepperoni Pizza",
+      "price": "9.60",
+      "image": 11,
+      "favorite": true
+    }
+  ]
+}
